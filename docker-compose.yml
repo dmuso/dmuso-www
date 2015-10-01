@@ -1,0 +1,33 @@
+---
+base:
+  build: .
+  volumes:
+    - ".:/app"
+  ports:
+    - "80:4567"
+
+basetest:
+  build: .
+  volumes:
+    - ".:/app"
+  ports:
+    - "80:4567"
+
+
+web:
+  extends:
+    file: docker-compose.yml
+    service: base
+  command: ['middleman', 'server']
+
+build:
+  extends:
+    file: docker-compose.yml
+    service: base
+  command: ['middleman', 'build']
+
+rake:
+  extends:
+    file: docker-compose.yml
+    service: base
+  entrypoint: ['rake']
