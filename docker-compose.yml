@@ -25,9 +25,3 @@ build:
     file: docker-compose.yml
     service: base
   command: ['middleman', 'build']
-
-rake:
-  extends:
-    file: docker-compose.yml
-    service: base
-  entrypoint: ['rake']
