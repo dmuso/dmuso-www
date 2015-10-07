@@ -1,0 +1,4 @@
+FROM nginx:latest
+MAINTAINER Dan Harper <dan@kingdomsolutions.com.au>
+
+ADD build      /usr/share/nginx/html

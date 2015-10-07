@@ -1,0 +1,22 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  post:
+    - docker info
+    - docker build -t dmuso/dmuso-www .
+    - docker run dmuso/dmuso-www bundle exec middleman build
+    - docker build -t dmuso/dmuso-www -f Dockerfile-server .
+
+test:
+  override:
+    - docker run -d -i -t -p 80:80 dmuso/dmuso-www; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:80 | grep -i dmuso
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push dmuso/dmuso-www
