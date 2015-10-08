@@ -5,8 +5,6 @@ machine:
 dependencies:
   post:
     - docker info
-    - docker build -t dmuso/dmuso-www .
-    - docker run dmuso/dmuso-www bundle exec middleman build
     - docker build -t dmuso/dmuso-www -f Dockerfile-server .
 
 test:

@@ -6,22 +6,14 @@ base:
   ports:
     - "80:4567"
 
-basetest:
-  build: .
-  volumes:
-    - ".:/app"
-  ports:
-    - "80:4567"
-
-
 web:
   extends:
     file: docker-compose.yml
     service: base
-  command: ['middleman', 'server']
+  command: ['bundle', 'exec', 'middleman', 'server']
 
-build:
+mmbuild:
   extends:
     file: docker-compose.yml
     service: base
-  command: ['middleman', 'build']
+  command: ['bundle', 'exec', 'middleman', 'build']
