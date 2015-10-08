@@ -1,2 +1,2 @@
 # dmuso-www
-Middleman powered static website for http://www.dmuso.com
+Jekyll powered static website for http://www.dmuso.com
