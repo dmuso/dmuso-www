@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hey there, I'm Dan, a software developer, entrepreneur and musician. I've been coding for about 20 years with the last 9 years spent predominantly around the Ruby programming language. My intention is for the articles here to help developers become better at dealing with people and to understand business and what drives it.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Let me know how I can help you, hit me up at dan@dmuso.com.
