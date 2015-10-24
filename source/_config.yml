@@ -10,3 +10,5 @@ github_username:  dmuso
 
 # Build settings
 markdown: kramdown
+permalink: /:year/:month/:day/:title/
+disqus: dmuso
