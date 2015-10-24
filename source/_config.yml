@@ -12,3 +12,4 @@ github_username:  dmuso
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 disqus: dmuso
+google_analytics: UA-69243292-1
