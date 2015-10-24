@@ -4,13 +4,13 @@ base:
   volumes:
     - ".:/app"
   ports:
-    - "80:4567"
+    - "4000:4000"
 
 web:
   extends:
     file: docker-compose.yml
     service: base
-  command: ['bundle', 'exec', 'jekyll', 'server']
+  command: ['bundle', 'exec', 'jekyll', 'server', '--source', 'source', '--destination', 'build']
 
 jklbuild:
   extends:
