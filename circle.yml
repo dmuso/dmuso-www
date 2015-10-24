@@ -10,7 +10,7 @@ dependencies:
 test:
   override:
     - docker run -d -i -t -p 80:80 dmuso/dmuso-www; sleep 10
-    - curl --retry 10 --retry-delay 5 -v http://localhost:80 | grep -i dmuso
+    - curl --retry 10 --retry-delay 5 -I -v http://localhost:80 | grep -i dmuso
 
 deployment:
   hub:
