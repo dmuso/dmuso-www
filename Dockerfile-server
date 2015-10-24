@@ -1,4 +1,6 @@
 FROM nginx:latest
 MAINTAINER Dan Harper <dan@kingdomsolutions.com.au>
 
-ADD build      /usr/share/nginx/html
+ADD nginx.conf    /etc/nginx/nginx.conf
+
+ADD build         /usr/share/nginx/html

@@ -10,6 +10,6 @@ github_username:  dmuso
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title.html
 disqus: dmuso
 google_analytics: UA-69243292-1
