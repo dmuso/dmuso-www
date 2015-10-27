@@ -6,9 +6,60 @@
 </description>
     <link>http://dmuso.com/</link>
     <atom:link href="http://dmuso.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Oct 2015 09:47:31 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Oct 2015 09:47:31 +0000</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2015 10:45:16 +0000</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 10:45:16 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Double or Single Quoted Strings in Ruby</title>
+        <description>&lt;p&gt;Once you’ve been coding in Ruby for a while, you start to notice a trend. No one can decide whether to use double or single quoted strings in Ruby! You’ll see code written in examples, tutorials, gems, and the code from your teammates that will have a mixture of single or double quotes for strings. Sometimes there will seem to be little rhyme nor reason as to why someone has used single or double quotes.&lt;/p&gt;
+
+&lt;h2 id=&quot;string-interpolation&quot;&gt;String Interpolation&lt;/h2&gt;
+
+&lt;p&gt;There is one reason that you’ve probably already noticed: you need to use double quotes when your string requires interpolation.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;green&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&amp;quot;The colour of the light is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;The colour of the light is green&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, that’s the first rule of Ruby strings: Use double quotes when you need string interpolation.&lt;/p&gt;
+
+&lt;h2 id=&quot;escaping-special-characters&quot;&gt;Escaping Special Characters&lt;/h2&gt;
+
+&lt;p&gt;If you need to print special characters out to a console or file, you’ll need to use a double quoted string.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;green&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;The colour of the light is:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;light&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;green&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Using single quoted strings in this example will literally print &lt;code&gt;\n&lt;/code&gt; to your console:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;The colour of the light is:\ngreen&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;light&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ngreen&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;performance&quot;&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;You may hear someone say that single quoted strings are faster than double quoted strings. Technically, this is true, however, the performance gains vary and have been recorded to be between 0.4% and 3% faster using single quotes. If every single microsecond is important to you, then use single quoted strings.&lt;/p&gt;
+
+&lt;h2 id=&quot;rubocop&quot;&gt;RuboCop&lt;/h2&gt;
+
+&lt;p&gt;When working with a team of people with varying levels of experience in Ruby, it can be helpful to have coding style guides and have them enforced at build/test time with something like &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;RuboCop&lt;/a&gt;. If there is any slight chance that you want to add RuboCop at some point in the future. Save yourself the future headaches and conform to RuboCop’s default rules on strings, which is:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use single quoted strings unless interpolation is required.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When you have a large codebase, even if you’re the only developer, it can be a lot of work to replace quotes in nearly all of your source code files. The best option would probably be to add RuboCop early on in a project so that the styling is consistent. It’s not a fun job to go back and tweak all your source code to make them consistent.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 21:14:00 +0000</pubDate>
+        <link>http://dmuso.com/2015/10/27/double-or-single-quoted-strings-in-ruby.html</link>
+        <guid isPermaLink="true">http://dmuso.com/2015/10/27/double-or-single-quoted-strings-in-ruby.html</guid>
+        
+        
+        <category>ruby</category>
+        
+      </item>
     
       <item>
         <title>Introduce a new language to your team - Part 1</title>
