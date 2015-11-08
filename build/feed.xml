@@ -6,9 +6,45 @@
 </description>
     <link>http://dmuso.com/</link>
     <atom:link href="http://dmuso.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2015 11:21:19 +0000</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2015 11:21:19 +0000</lastBuildDate>
+    <pubDate>Sun, 08 Nov 2015 12:33:20 +0000</pubDate>
+    <lastBuildDate>Sun, 08 Nov 2015 12:33:20 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>First Steps with Ruby on Rails</title>
+        <description>&lt;p&gt;You may be an absolute beginner in regards to Ruby on Rails, however, you’ve heard enough good things about it that you’ve decided to jump in. The question is, where do you start?&lt;/p&gt;
+
+&lt;p&gt;Some options would be &lt;a href=&quot;https://www.bloc.io/ruby-warrior#/&quot;&gt;Ruby Warrior&lt;/a&gt;, &lt;a href=&quot;https://www.codecademy.com/&quot;&gt;Code Academy&lt;/a&gt;, possibly hunt around for some tutorials, or decide on a web app to build and have a go. There is also another question that you’re probably wanting to know that answer to, should I learn Rails or Ruby first?&lt;/p&gt;
+
+&lt;h2 id=&quot;rails-or-ruby-first&quot;&gt;Rails or Ruby First?&lt;/h2&gt;
+
+&lt;p&gt;The Ruby/Rails community is generally split at around 50/50 when it comes to the answer to this question. There is value in both options. If you start with Ruby first, you will understand many of the core language concepts. A Ruby first approach should also help you write cleaner code, which will help with long term maintenance of the first applications you write.&lt;/p&gt;
+
+&lt;p&gt;Now, Rails does have a lot of “magic” that you’ll need to wrap your head around. There are many Rails concepts that are not a part of the core Ruby language. For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ago&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Thu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Nov&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;06&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;49&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;UTC&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Attempting to use this outside of Rails will give you an error:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ago&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;NoMethodError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;undefined&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`days&amp;#39; for 3:Fixnum&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is because Rails monkey-patches core Ruby libraries to make life easier for the Rails developer. This type of example is only scratching the surface of the magic that Rails gives to developers. Learning Rails first will give you access to this magic that will make your code simpler and more readable.&lt;/p&gt;
+
+&lt;p&gt;My recommendation is to use the book &lt;a href=&quot;https://pragprog.com/book/rails4/agile-web-development-with-rails-4&quot;&gt;Agile Web Development with Rails&lt;/a&gt;. It teaches you how to build an ecommerce website, and takes you through it step by step. I learnt Rails first via this book, and I’ve seen two non-programmers use the book to learn Rails successfully.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Nov 2015 21:03:00 +0000</pubDate>
+        <link>http://dmuso.com/2015/11/08/first-steps-with-ruby-on-rails.html</link>
+        <guid isPermaLink="true">http://dmuso.com/2015/11/08/first-steps-with-ruby-on-rails.html</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>rails</category>
+        
+      </item>
     
       <item>
         <title>Double or Single Quoted Strings in Ruby</title>

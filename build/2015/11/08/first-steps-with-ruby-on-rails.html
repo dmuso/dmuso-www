@@ -5,12 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dan Harper</title>
-  <meta name="description" content="Software developers becoming leaders.
-">
+  <title>First Steps with Ruby on Rails</title>
+  <meta name="description" content="You may be an absolute beginner in regards to Ruby on Rails, however, you’ve heard enough good things about it that you’ve decided to jump in. The question i...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://dmuso.com/">
+  <link rel="canonical" href="http://dmuso.com/2015/11/08/first-steps-with-ruby-on-rails.html">
   <link rel="alternate" type="application/rss+xml" title="Dan Harper" href="http://dmuso.com/feed.xml" />
 </head>
 
@@ -52,39 +51,52 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">First Steps with Ruby on Rails</h1>
+    <p class="post-meta">Nov 8, 2015</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Nov 8, 2015</span>
+  <article class="post-content">
+    <p>You may be an absolute beginner in regards to Ruby on Rails, however, you’ve heard enough good things about it that you’ve decided to jump in. The question is, where do you start?</p>
 
-        <h2>
-          <a class="post-link" href="/2015/11/08/first-steps-with-ruby-on-rails.html">First Steps with Ruby on Rails</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 27, 2015</span>
+<p>Some options would be <a href="https://www.bloc.io/ruby-warrior#/">Ruby Warrior</a>, <a href="https://www.codecademy.com/">Code Academy</a>, possibly hunt around for some tutorials, or decide on a web app to build and have a go. There is also another question that you’re probably wanting to know that answer to, should I learn Rails or Ruby first?</p>
 
-        <h2>
-          <a class="post-link" href="/2015/10/27/double-or-single-quoted-strings-in-ruby.html">Double or Single Quoted Strings in Ruby</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 21, 2015</span>
+<h2 id="rails-or-ruby-first">Rails or Ruby First?</h2>
 
-        <h2>
-          <a class="post-link" href="/2015/10/21/introduce-a-new-language-to-your-team-part-1.html">Introduce a new language to your team - Part 1</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>The Ruby/Rails community is generally split at around 50/50 when it comes to the answer to this question. There is value in both options. If you start with Ruby first, you will understand many of the core language concepts. A Ruby first approach should also help you write cleaner code, which will help with long term maintenance of the first applications you write.</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>Now, Rails does have a lot of “magic” that you’ll need to wrap your head around. There are many Rails concepts that are not a part of the core Ruby language. For example:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">3</span><span class="o">.</span><span class="n">days</span><span class="o">.</span><span class="n">ago</span>
+<span class="o">=&gt;</span> <span class="no">Thu</span><span class="p">,</span> <span class="mo">05</span> <span class="no">Nov</span> <span class="mi">2015</span> <span class="mi">12</span><span class="p">:</span><span class="mo">06</span><span class="p">:</span><span class="mi">49</span> <span class="no">UTC</span> <span class="o">+</span><span class="mo">00</span><span class="p">:</span><span class="mo">00</span></code></pre></div>
+
+<p>Attempting to use this outside of Rails will give you an error:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">3</span><span class="o">.</span><span class="n">days</span><span class="o">.</span><span class="n">ago</span>
+<span class="o">=&gt;</span> <span class="ss">NoMethodError</span><span class="p">:</span> <span class="n">undefined</span> <span class="nb">method</span> <span class="sb">`days&#39; for 3:Fixnum</span></code></pre></div>
+
+<p>This is because Rails monkey-patches core Ruby libraries to make life easier for the Rails developer. This type of example is only scratching the surface of the magic that Rails gives to developers. Learning Rails first will give you access to this magic that will make your code simpler and more readable.</p>
+
+<p>My recommendation is to use the book <a href="https://pragprog.com/book/rails4/agile-web-development-with-rails-4">Agile Web Development with Rails</a>. It teaches you how to build an ecommerce website, and takes you through it step by step. I learnt Rails first via this book, and I’ve seen two non-programmers use the book to learn Rails successfully.</p>
+
+
+  </article>
+
+  
+<div class="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'dmuso';
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 
 </div>
 
@@ -173,8 +185,8 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-69243292-1', 'auto');
     ga('send', 'pageview', {
-      'page': '/index.html',
-      'title': ''
+      'page': '/2015/11/08/first-steps-with-ruby-on-rails.html',
+      'title': 'First Steps with Ruby on Rails'
     });
   </script>
   <!-- End Google Analytics -->
