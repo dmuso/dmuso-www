@@ -6,8 +6,8 @@
 </description>
     <link>http://dmuso.com/</link>
     <atom:link href="http://dmuso.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Nov 2015 12:33:20 +0000</pubDate>
-    <lastBuildDate>Sun, 08 Nov 2015 12:33:20 +0000</lastBuildDate>
+    <pubDate>Mon, 11 Jan 2016 00:29:10 +0000</pubDate>
+    <lastBuildDate>Mon, 11 Jan 2016 00:29:10 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -43,6 +43,43 @@
         <category>ruby</category>
         
         <category>rails</category>
+        
+      </item>
+    
+      <item>
+        <title>Docker on Mac OS X: &#39;No space left on device&#39; error</title>
+        <description>&lt;p&gt;After using Docker with boot2docker or Docker Machine for some time, you may find yourself facing an error “No space left on device” appearing in your output from commands like &lt;code&gt;docker-compose build&lt;/code&gt;. When you check how much space you have currently available on your Mac, you may notice that you’ve got plenty of disk capacity. So where is this error coming from?&lt;/p&gt;
+
+&lt;p&gt;boot2docker and Docker Machine both utilise a Linux VM image that runs on your Mac operating system. Because Docker only runs on Linux, this enables you to use Docker commands in a terminal as if you were running on a Linux machine. The Docker commands you type are sent to a Docker process running inside the Linux VM.&lt;/p&gt;
+
+&lt;p&gt;When you receive error messages in your output from your Docker commands, they are usually errors related to the local Linux VM environment that your Docker commands have been sent to. The ‘no space left on device’ error is one such example. It means that the VM image used by Docker has run out of disk space.&lt;/p&gt;
+
+&lt;p&gt;Everytime you perform a change to your application that uses Docker, you will collect old Docker images. Docker creates a new image that contains your changes, and then untags the existing image. These untagged images hang around on the Linux VM image and over time, the images consume all of the disk space on the VM image.&lt;/p&gt;
+
+&lt;p&gt;Docker usage that can increase the speed at which your disk capacity gets eaten up include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Running &lt;code&gt;docker-compose build&lt;/code&gt; several times per day as a part of your regular development workflow.&lt;/li&gt;
+  &lt;li&gt;Developing on multiple projects simultaneously, or switching between projects regularly within a week of development.&lt;/li&gt;
+  &lt;li&gt;Having multiple software projects that use many different variations of “FROM” images. Examples may include many Ruby projects with “FROM” images that include “FROM ruby”, “FROM ruby:2.1”, “FROM ruby:2.2”, etc.&lt;/li&gt;
+  &lt;li&gt;When you’re working on a platform that utilises microservices, you will likely be seeing or doing every one of the above points. This makes the disk space problem more prevalent than usual.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-fix&quot;&gt;The Fix&lt;/h2&gt;
+
+&lt;p&gt;An easy fix to get you back up and running again is to run the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker rmi -f $( docker images | grep &#39;&amp;lt;none&amp;gt;&#39; | tr -s &#39; &#39; | cut -d &#39; &#39; -f 3)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will obtain a list of images that are currently tagged as “&lt;none&gt;&quot; (effectively untagged) and pass them to `docker rmi -f` which will delete the image. One of the advantages of using Docker is that images can generally be deleted with minimal risk. If you accidently delete something you needed, just run a `docker-compose build` again from your project directory and you&#39;ll be up and running again.&lt;/none&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Nov 2015 21:03:00 +0000</pubDate>
+        <link>http://dmuso.com/2015/11/08/docker-on-mac-no-space-left-on-device.html</link>
+        <guid isPermaLink="true">http://dmuso.com/2015/11/08/docker-on-mac-no-space-left-on-device.html</guid>
+        
+        
+        <category>docker</category>
         
       </item>
     
