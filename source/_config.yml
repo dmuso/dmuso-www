@@ -2,7 +2,7 @@
 title: Dan Harper
 email: dan@dmuso.com
 description: > # this means to ignore newlines until "baseurl:"
-  Software developers becoming leaders.
+  Technology and Leadership.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dmuso.com" # the base hostname & protocol for your site
 twitter_username: dan_harper
