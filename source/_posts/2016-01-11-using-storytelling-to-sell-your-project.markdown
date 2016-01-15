@@ -24,21 +24,21 @@ Of course, we still use storytelling today. We can see some of the most obvious 
 
 As I spent some time pondering on the use of storytelling in our world, I realised that storytelling is used commonly in places where we don't expect it to be, and we see it every day. Sales and particularly marketing, use storytelling when selling products. Take for example this image:
 
-![Boring Beer]({{ site.url }}/assets/beer-boring.jpg)
+![Boring Beer]({{ site.url }}/assets/beer-boring.jpg){: .center-image }
 *Image from: [Homebrew Bungler](http://homebrewbungler.com/the-sound-of-beer/)*
 
 What story does this image convey? Some dude just grabbed a beer out of the fridge, poured it out into a glass, placed them on the kitchen bench and decided to take a picture with his phone. It's not very enticing. The person taking this photo and sharing it with you is telling you they cared just enough to take out their phone and take a photo. Maybe he doesn't mind this brand of beer over some others. Does the photo tempt you to go and buy this beer to try it for yourself? Probably not. You may not even remember the brand name next time you're in the shop.
 
 Now, compare it to this photo:
 
-![Exciting Beer]({{ site.url }}/assets/beer-exciting.jpg)
+![Awesome Beer]({{ site.url }}/assets/beer-awesome.jpg){: .center-image }
 *Image from: [PetaPixel](http://petapixel.com/2014/10/22/tutorial-capture-gorgeous-5-light-beer-bottle-product-shot-start-finish/)*
 
 The story here is much more compelling. Here we can assume the beer is cold, and it's presentation is promising to quench our thirst. Not only that, but it promises adventure. The beer is about to be consumed on the balcony of a trendy penthouse apartment, most likely with someone else joining you. Why would you be enjoying this tasty beverage on your own with this kind of view? Considerable effort went into making this photo look attractive, compelling, and to tell a story.
 
 Now we come to the ultimate in beer storytelling:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/57zo8O5pDXc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/57zo8O5pDXc" frameborder="0" allowfullscreen></iframe>{: .center-image }
 
 Wow, just wow. Through these three examples, we can follow a transformation from boring to awesome. If you're the cynical type, you may be asking the question, "Yeah, nice and all, but does it work?". Well, it would seem the answer is [yes, it does work](http://www.adweek.com/news/advertising-branding/how-heineken-s-special-blend-storytelling-and-science-won-day-165323
 ). Here we have statistical measurement of the positive impact of storytelling.
