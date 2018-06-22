@@ -1,4 +1,4 @@
-FROM ruby:2
+FROM ruby:2.5
 MAINTAINER Dan Harper <dan@kingdomsolutions.com.au>
 
 RUN apt-get -y update
