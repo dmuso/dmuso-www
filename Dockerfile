@@ -10,4 +10,4 @@ ADD Gemfile.lock /app/
 RUN bundle install --jobs 8 --retry 3
 ADD . /app/
 
-CMD bundle exec jekyll build --source source --destination build
+CMD bundle exec jekyll build

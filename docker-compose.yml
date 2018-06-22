@@ -10,10 +10,10 @@ web:
   extends:
     file: docker-compose.yml
     service: base
-  command: ['bundle', 'exec', 'jekyll', 'server', '--source', 'source', '--destination', 'build']
+  command: ['bundle', 'exec', 'jekyll', 'server']
 
 jklbuild:
   extends:
     file: docker-compose.yml
     service: base
-  command: ['bundle', 'exec', 'jekyll', 'build', '--source', 'source', '--destination', 'build']
+  command: ['bundle', 'exec', 'jekyll', 'build']
