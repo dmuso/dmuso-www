@@ -45,4 +45,3 @@ Wow, just wow. Through these three examples, we can follow a transformation from
 
 Now, how can we apply this to the projects we are delivering? How do we best engage our stakeholders, our team and our organisation? How do we inspire them? Highlight the challenges? Celebrate the wins?
 
-Next up, I'll be showing you two examples of who to turn boring projects into awesome projects.
