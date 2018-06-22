@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "The Secret to Delivering Software Faster"
+date:   2017-10-25 14:12:00
+categories: ['leadership']
+---
 Want to build software products fast? Build, coach and support your people.
 
 Building people is all about getting them up to their highest performance potential. People want to be great, they want to make a difference, they want to build products that customers love. People want to be high performers, and they want to work with other high performers.

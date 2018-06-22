@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "The Power of No"
+date:   2017-02-16 14:12:00
+categories: ['leadership']
+---
 How long has it been since you heard a software developer say "No", or maybe "I disagree"? If you can think of a few recent occasions where a developer did say this, I'd take the bet that it was usually the same person. Across our industry, software teams and individuals are not saying "No" enough, and we're delivering lower quality software to our customers as a result.
 
 To illustrate the typical response I get on this subject, recently I was asked to give a presentation on "The Power of No". In mentioning the title of the presentation to some of my peers, some of their responses were:
